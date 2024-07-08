@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+const FontSans = Plus_Jakarta_Sans({
+   subsets: ["latin"],
+   variable : '--font-sans',
+   weight : ['300' , '400' , '500' , '600' , '700']
+   });
 
 export const metadata: Metadata = {
   title: "CarePulse",
@@ -16,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(`bg-dark-300 font-sans text-white min-h-screen antialiased` , FontSans.variable)}>{children}</body>
     </html>
   );
 }
