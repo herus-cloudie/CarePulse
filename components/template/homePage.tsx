@@ -1,8 +1,8 @@
+import {PatientForm} from "../form/patientForm"
+import FormLayout from "./formLayout"
 
 const HomePage = () => {
-  return (
-    <div className="bg-red-500">HomePage</div>
-  )
+  return <FormLayout imgSrc="/Illustration-1.png" ClassName="sub-container max-w-[496px]" children={<PatientForm />}/>
 }
 
-export default HomePage
+export default HomePage;
