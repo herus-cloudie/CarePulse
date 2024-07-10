@@ -13,6 +13,7 @@ import { GenderOptions } from '@/constants';
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
 import { Label } from '../ui/label';
 import { Input } from "../ui/input"
+import { Textarea } from "../ui/textarea";
 
 
 const CustomFormField = ({inputType , name , label , placeholder , iconSrc , iconAlt} : CustomFormFieldProps) => {
@@ -70,6 +71,13 @@ const CustomFormField = ({inputType , name , label , placeholder , iconSrc , ico
             <div className="flex rounded-md border border-dark-500 bg-dark-400">
               <Image src={'/calendar.svg'} alt='calender' width={24} height={24} className='mx-2'/>
               <DatePicker dateFormat={'MM/dd/yyyy'} wrapperClassName="date-picker" selected={state.birthDate} onChange={(date) => setState({...state , birthDate : (date as Date)})}/>
+            </div>
+        );
+
+        case 'textArea':
+          return (
+            <div className="flex rounded-md border border-dark-500 bg-dark-400">
+              <Textarea onChange={(e) => setState({...state , gender : e.target.value})} className="shad-textArea border-0" name={name} placeholder={placeholder}/>  
             </div>
         );
 
