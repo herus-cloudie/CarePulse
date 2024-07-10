@@ -13,11 +13,10 @@ export const PatientForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex-1 space-y-6">
-
+    <div className="flex-1 space-y-6">
 
       <CustomFormField
-        type={'text'}
+        inputType={'text'}
         name="name"
         label="Full name"
         placeholder="John Doe"
@@ -26,7 +25,7 @@ export const PatientForm = () => {
       />
 
       <CustomFormField
-        type={'email'}
+        inputType={'text'}
         name="email"
         label="Email"
         placeholder="johndoe@gmail.com"
@@ -35,13 +34,13 @@ export const PatientForm = () => {
       />
 
       <CustomFormField
-        type={'text'}
+        inputType={'phone'}
         name="phone"
         label="Phone number"
         placeholder="+98 919 256 8598"
       />
 
       <Button onClick={() => router.push(`${Math.random()}/register`)} className="bg-green-500 w-full">Get Started</Button>
-    </form>
+    </div>
   );
 };

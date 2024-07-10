@@ -1,5 +1,8 @@
-import HomePage from '@/components/template/homePage'
+import {PatientForm} from "@/components/form/patientForm"
+import FormLayout from "@/components/module/formLayout"
 
-export default function Home() {
-  return <HomePage />
+const Home = () => {
+  return <FormLayout imgSrc="/Illustration-1.png" ClassName="sub-container max-w-[496px]" children={<PatientForm />}/>
 }
+
+export default Home;
