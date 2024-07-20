@@ -12,7 +12,7 @@ const RegisterForm = () => {
       name="Date Of Birth"
       label="Birth Day"
       placeholder=""
-      iconSrc="/LeadIcon.svg"
+      iconSrc="/icon/LeadIcon.svg"
       iconAlt="user"
       />
 
@@ -21,7 +21,7 @@ const RegisterForm = () => {
       name="gender"
       label="Gender"
       placeholder="johndoe@gmail.com"
-      iconSrc="/LeadIcon.svg"
+      iconSrc="/icon/LeadIcon.svg"
       iconAlt="email"
       />
 

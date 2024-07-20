@@ -20,7 +20,7 @@ export const PatientForm = () => {
         name="name"
         label="Full name"
         placeholder="John Doe"
-        iconSrc="/LeadIcon.svg"
+        iconSrc="/icon/LeadIcon.svg"
         iconAlt="user"
       />
 
@@ -29,7 +29,7 @@ export const PatientForm = () => {
         name="email"
         label="Email"
         placeholder="johndoe@gmail.com"
-        iconSrc="/LeadIcon-1.svg"
+        iconSrc="/icon/LeadIcon-1.svg"
         iconAlt="email"
       />
 

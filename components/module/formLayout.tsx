@@ -13,7 +13,7 @@ const FormLayout = ({imgSrc , ClassName , children} : {imgSrc : string, ClassNam
         <section className="remove-scrollbar container">
             <div className={`${ClassName}`}>
                 <div className="flex justify-between mb-16">
-                    <Image src='/logo.svg' width={161} height={32} alt="logo icon"/>
+                    <Image src='/icon/logo.svg' width={161} height={32} alt="logo icon"/>
                     {
                         pathName == '/' ? <span className="text-2xl sm:text-4xl"> 1 / 2</span>
                         : <span className="flex justify-between items-baseline gap-3 text-2xl sm:text-4xl"> 2 / 2 <small className="hidden sm:flex text-sm text-dark-600">almost done.</small></span>

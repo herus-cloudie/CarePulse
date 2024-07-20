@@ -69,7 +69,7 @@ const CustomFormField = ({inputType , name , label , placeholder , iconSrc , ico
         case 'date':
           return (
             <div className="flex rounded-md border border-dark-500 bg-dark-400">
-              <Image src={'/calendar.svg'} alt='calender' width={24} height={24} className='mx-2'/>
+              <Image src={'/icon/calendar.svg'} alt='calender' width={24} height={24} className='mx-2'/>
               <DatePicker dateFormat={'MM/dd/yyyy'} wrapperClassName="date-picker" selected={state.birthDate} onChange={(date) => setState({...state , birthDate : (date as Date)})}/>
             </div>
         );

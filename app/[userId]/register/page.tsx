@@ -6,7 +6,7 @@ import FormLayout from "@/components/module/formLayout"
 import RegisterForm from "@/components/form/registerForm"
 
 const Register = () => {
-    return <FormLayout imgSrc="/Illustration.png" ClassName="sub-container max-w-[860px] flex-1 flex-col py-10" children={<RegisterForm />}/>
+    return <FormLayout imgSrc="/img/Illustration.png" ClassName="sub-container max-w-[860px] flex-1 flex-col py-10" children={<RegisterForm />}/>
 }
 
 export default Register;
